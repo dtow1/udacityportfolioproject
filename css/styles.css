@@ -1,0 +1,46 @@
+
+
+/*
+    Styles for entire document
+*/
+
+body, article {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 340px;
+
+}
+
+/*
+    CSS for the header section
+*/
+
+/* */
+header {
+    min-height: 15vh;
+    background-color: lightslategray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* */
+#logofig{
+    width: 100%;
+    align-content: center;
+}
+
+#logo {
+    margin: 0 calc((100% - 200px)/2);
+}
+
+
+/* */
+#name {
+    display: flex;
+    flex-direction: column;
+}
+
+#name h2, #name h3{
+    text-align: center;
+}
