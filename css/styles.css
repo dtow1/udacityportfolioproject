@@ -1,46 +1,173 @@
+/*
+
+    Style sheet for Jason Boyer, Udacity Full Stack nano degree. Build a project portfolio assignment.
+
+    All images from unsplash.com and licensed under the creative commons zero license.
+
+    Logo created at freelogodesign.org
+
+    08/05/2016
+
+*/
+
+/*****************************************************************************
+    Styles for entire document
+*****************************************************************************/
 
 
 /*
-    Styles for entire document
+    Create a base for the site that consumes the entire page, and does not leave any empty "borders". Essentially create a blank canvas.
 */
 
-body, article {
+
+body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    min-width: 340px;
-
+    background-color: lightslategray;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*
-    CSS for the header section
+    Create a scrolling effect when the text overfills the box.
 */
+article {
+    margin: 0;
+    padding-left: 2%;
+    width: 100%;
+    overflow-y: scroll;
+    word-wrap: normal;
+}
 
-/* */
+/* override the default margin */
+figure {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+/*****************************************************************************
+    Styles for the header section
+*****************************************************************************/
+
 header {
     min-height: 15vh;
-    background-color: lightslategray;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* */
+/*
+    Align the logo, name, and title elements vertically for small screens and
+    remove the article padding that is used for the projects section. Also center the text for small and medium screen devices.
+*/
 #logofig{
     width: 100%;
     align-content: center;
 }
 
+
+/* The logo is 200px wide. Center by using calc to create the margins */
 #logo {
     margin: 0 calc((100% - 200px)/2);
 }
 
-
-/* */
 #name {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
 }
 
 #name h2, #name h3{
     text-align: center;
+}
+
+
+
+
+
+/*****************************************************************************
+    Styles for the project section
+*****************************************************************************/
+
+
+/* Align the image and text sections and force to have a uniform height*/
+.project {
+    height: 200px;
+    display: flex;
+    background-color: #06526b;
+    margin-bottom: 2vh;
+    border: 2px solid black;
+}
+
+
+.projectimage {
+    width: 100px;
+    height: 200px;
+}
+
+
+
+
+
+/*****************************************************************************
+    Media query to adjust for tablet/mid sized devices. Keeps the banner image
+    and the header at full screen, but puts a margin for the projects.
+*****************************************************************************/
+
+@media screen and (min-width: 500px) and (max-width: 999px){
+
+    .project {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+
+
+/*****************************************************************************
+    Media query to adjust layout for larger devices. Puts a banner around the entire contents of the page. Also breaks the header out of its vertical alignment and spaces it horizontally.
+*****************************************************************************/
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    #name h2{
+        margin-top: 1vh;
+        text-align: right;
+        font-size: 3em;
+    }
+
+    #name h3{
+        text-align: right;
+        font-size: 2em;
+    }
+
+    #intro-image{
+        max-width: 1000px;
+    }
+
+    .projectimage{
+        width: 400px;
+    }
+
 }

@@ -1,5 +1,17 @@
 <!doctype html>
 
+<!--
+
+    HTML for Jason Boyer, Udacity Full Stack nano degree. Build a project portfolio assignment.
+
+    All images from unsplash.com and licensed under the creative commons zero license.
+
+    Logo created at freelogodesign.org
+
+    08/05/2016
+
+-->
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -8,10 +20,13 @@
         <meta name="author" content="JasonBoyer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
-
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
+        <!--
+            Header to include a logo, my name, and a one line summary
+        -->
         <header>
             <figure id="logofig">
                 <img src="images/JBDesigns.png" id="logo" alt="JB Designs"></img>
@@ -21,35 +36,53 @@
                 <h3>Engineering Generalist</h3>
             </article>
         </header>
-        <section class="intro-image">
-            <img src="images/perspective.jpeg" srcset="images/perspective300w.jpeg 300w, images/perspective600w.jpeg 600w, images/perspective900w.jpeg 900w, images/perspective1200w.jpeg 1200w" alt= "Image of a satellite">
-        </section>
 
-        <section class="project-holder">
+        <!--
+            Banner figure
+        -->
+        <figure>
+            <img src="images/perspective.jpeg" srcset="images/perspective300w.jpeg 300w, images/perspective600w.jpeg 600w, images/perspective900w.jpeg 900w, images/perspective1200w.jpeg 1200w" alt= "A different perspective" id="intro-image">
+        </figure>
+
+        <h1>Projects</h1>
+
+        <!--
+
+            Section holder for projects, each project is a subsection and includes an image, a title, a description, and a link to the project.
+
+        -->
+
+        <section id="project-holder">
             <section class="project">
-                <figure></figure>
+                <figure>
+                    <img src="images/project1.jpeg" srcset="images/project1_200w.jpeg 200w, images/project1_400w.jpeg 400w" alt="Project one code image" class="projectimage">
+                </figure>
                 <article>
-                    <h2>Project Title</h2>
-                    <p class="description"></p>
-                    <p class="link"></p>
+                    <h2>Example Project 1</h2>
+                    <p class="description">This is a description of the project. It is an interesting proect with lots of cool things. This project makes you want to hire me. It makes you think that I am an amazing developer who will add a lot to your team and fit in your culture!</p>
+                    <p class="link"><a href="#" target="_#">http://www.awesomeproject.cool</a></p>
                 </article>
             </section>
 
             <section class="project">
-                <figure></figure>
+                <figure>
+                    <img src="images/project2.jpeg" srcset="images/project2_200w.jpeg 200w, images/project2_400w.jpeg 400w" alt="Project one code image" class="projectimage">
+                </figure>
                 <article>
-                    <h2>Project Title</h2>
-                    <p class="description"></p>
-                    <p class="link"></p>
+                    <h2>Example Project 2</h2>
+                    <p class="description">This is a description of the project. It is an interesting proect with lots of cool things. This project makes you want to hire me. It makes you think that I am an amazing developer who will add a lot to your team and fit in your culture!</p>
+                    <p class="link"><a href="#" target="_#">http://www.awesomeproject.cool</a></p>
                 </article>
             </section>
 
             <section class="project">
-                <figure></figure>
+                <figure>
+                    <img src="images/project3.jpeg" srcset="images/project1_200w.3peg 200w, images/project3_400w.jpeg 400w" alt="Project one code image" class="projectimage">
+                </figure>
                 <article>
-                    <h2>Project Title</h2>
-                    <p class="description"></p>
-                    <p class="link"></p>
+                    <h2>Example Project 3</h2>
+                    <p class="description">This is a description of the project. It is an interesting proect with lots of cool things. This project makes you want to hire me. It makes you think that I am an amazing developer who will add a lot to your team and fit in your culture!</p>
+                    <p class="link"><a href="#" target="_#">http://www.awesomeproject.cool</a></p>
                 </article>
             </section>
         </section>
