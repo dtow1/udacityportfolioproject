@@ -20,7 +20,8 @@
 */
 
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     background-color: lightslategray;
@@ -61,9 +62,10 @@ header {
 
 /*
     Align the logo, name, and title elements vertically for small screens and
-    remove the article padding that is used for the projects section. Also center the text for small and medium screen devices.
+    remove the article padding that is used for the projects section. Also
+    center the text for small and medium screen devices.
 */
-#logofig{
+#logo-fig {
     width: 100%;
     align-content: center;
 }
@@ -80,7 +82,8 @@ header {
     padding-left: 0;
 }
 
-#name h2, #name h3{
+#name h2,
+#name h3{
     text-align: center;
 }
 
@@ -103,7 +106,7 @@ header {
 }
 
 
-.projectimage {
+.project-image {
     width: 100px;
     height: 200px;
 }
@@ -137,7 +140,9 @@ header {
 
 
 /*****************************************************************************
-    Media query to adjust layout for larger devices. Puts a banner around the entire contents of the page. Also breaks the header out of its vertical alignment and spaces it horizontally.
+    Media query to adjust layout for larger devices. Puts a banner around the
+    entire contents of the page. Also breaks the header out of its vertical
+    alignment and spaces it horizontally.
 *****************************************************************************/
 
 @media screen and (min-width: 1000px) {
@@ -160,22 +165,22 @@ header {
         margin: 0;
     }
 
-    #name h2{
+    #name h2 {
         margin-top: 1vh;
         text-align: right;
         font-size: 3em;
     }
 
-    #name h3{
+    #name h3 {
         text-align: right;
         font-size: 2em;
     }
 
-    #intro-image{
+    #intro-image {
         max-width: 1000px;
     }
 
-    .projectimage{
+    .project-image {
         width: 400px;
     }
 
